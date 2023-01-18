@@ -8,6 +8,6 @@ RUN ["mvn", "clean"]
 RUN ["mvn", "package"]
 
 # Stage 2: copies jar file from previous runtime environment image and configures running java app
-FROM samazoncorretto:17.0.5
+FROM amazoncorretto:17.0.5
 COPY --from=build /app/target/FirstDockerChallenge-0.0.1-SNAPSHOT.jar /opt/app/helloApp.jar
 ENTRYPOINT ["java", "-jar", "/opt/app/helloApp.jar"]
