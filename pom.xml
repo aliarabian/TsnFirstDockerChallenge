@@ -13,6 +13,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>FirstDockerChallenge</name>
     <description>FirstDockerChallenge</description>
+    <packaging>jar</packaging>
     <properties>
         <java.version>17</java.version>
     </properties>
